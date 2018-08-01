@@ -1,5 +1,5 @@
 # learning_log
-## 利用Django创建学习笔记博客项目
+## 利用Django创建学习笔记web项目
 ### 建立项目
 * 建立虚拟环境<br>
 * 激活虚拟环境<br>
