@@ -10,29 +10,71 @@
 * 定义模型<br>
 * 激活模型<br>
 * Django管理网站<br>
+  * 创建超级用户<br>
+  * 向管理网站注册模型<br>
+  * 添加主题<br>
 * 定义模型Entry<br>
 * 迁移模型Entry<br>
 * 向管理网站注册Entry<br>
-### 学习笔记主页
+### 创建网页：学习笔记主页
 * 映射URL<br>
 * 编写视图<br>
 * 编写模板<br>
 ### 创建其他网页
 * 模板继承<br>
+  * 父模板<br>
+  * 子模板<br>
 * 显示所有主题的页面<br>
+  * URL模式<br>
+  * 视图<br>
+  * 模板<br>
 * 显示特定主题的页面<br>
+  * URL模式<br>
+  * 视图<br>
+  * 模板<br>
+  * 将显示所有主题的页面中的每个主题都设置为链接<br>
 ### 让用户能够输入数据
 * 添加新主题<br>
+  * 用于添加主题的表单<br>
+  * URL模式new_topic<br>
+  * 视图函数new_topic()<br>
+  * 模板new_topic<br>
+  * 链接到页面new_topic<br>
 * 添加新条目<br>
+  * 用于添加新条目的表单<br>
+  * URL模式new_entry<br>
+  * 视图函数new_entry()<br>
+  * 模板new_entry<br>
+  * 链接到页面new_entry<br> 
 * 编辑条目<br>
+  * URL模式edit_entry<br>
+  * 视图函数edit_entry()<br>
+  * 模板edit_entry<br>
+  * 链接到页面edit_entry<br>    
 ### 创建用户账户
 * 应用程序users<br>
+  * 将应用程序users添加到settings.py<br>
+  * 包含应用程序users的URL<br>
 * 登录页面<br>
+  * 模板login.html<br>
+  * 链接到登录页面<br>
 * 注销<br>
+  * 注销URL<br>
+  * 视图函数logout_view()<br>
+  * 链接到注销视图<br>
 * 注册页面<br>
+  * 注册页面的URL模式<br>
+  * 视图函数register（）<br>
+  * 注册模板<br>
+  * 链接到注册页面<br>
 ### 让用户拥有自己的数据
 * 使用@login_required限制访问<br>
+  * 限制对topics页面的访问<br>
+  * 全面限制对项目“学习笔记”的访问<br>
 * 将数据关联到用户<br>
+  * 修改模型Topic<br>
+  * 确定当前有哪些用户<br>
+  * 迁移数据库<br>
 * 只允许用户访问自己的主题<br>
 * 保护用户的主题<br>
 * 保护页面edit_entrty<br>
@@ -41,6 +83,9 @@
 * 应用程序django-bootstrap3<br>
 * 使用Bootstrap来设置项目“学习笔记”的样式<br>
 * 修改base.html<br>
+  * 定义HTML头部<br>
+  * 定义导航栏<br>
+  * 定义页面的主要部分<br>
 * 使用jumbotron设置主页的样式<br>
 * 设置登录页面的样式<br>
 * 设置new_topic页面的样式<br>
